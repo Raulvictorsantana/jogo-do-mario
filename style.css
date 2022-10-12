@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#jogo{
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: rgb(89,108,232);
+    background: linear-gradient(3deg, rgba(89,108,232,1) 32%, rgba(51,76,228,1) 66%, rgba(61,84,227,1) 100%, rgba(198,205,241,1) 100%);
+    border-bottom: 10px solid  green;
+        
+} 
+.nuvem{
+    position: absolute;
+    height: 120px;
+    margin-top: 20px;
+    right: -180px;
+   animation: moverNuvem 20s infinite linear;
+   
+}
+.barril{ 
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+   animation: moverBarril 2s infinite linear ;  
+
+} 
+.mario{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+
+}
+.pulo{
+    animation: pulo 600ms ease-out;
+}
+
+@keyframes moverBarril {
+    from{
+         right: -80;
+    }
+    to{
+        right: 100%;
+
+    }
+    
+}
+
+@keyframes moverNuvem {
+    from{
+        right: -120;
+    }
+    to{
+        right: 100%;
+    }
+    
+} 
+@keyframes pulo {
+    0% {
+        bottom: 0;
+    }
+   
+    40%{
+     bottom: 120px;
+    }
+    
+    50%{
+        bottom: 130px;
+    }
+    60%{
+        bottom: 130px;
+    }
+
+  
+    100%{
+        bottom: 0;
+    }
+}
