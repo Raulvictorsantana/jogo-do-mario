@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #jogo{
-    width: 80%;
+    width: 100%;
     height: 500px;
     border: 1px solid black;
     margin: 0 auto;
@@ -19,8 +19,8 @@
     position: absolute;
     height: 120px;
     margin-top: 20px;
-    right: -180px;
-   animation: moverNuvem 20s infinite linear;
+    right: -250px;
+   animation: moverNuvem 25s infinite linear;
    
 }
 .barril{ 
@@ -28,12 +28,12 @@
     position: absolute;
     bottom: 0;
     right: -80px;
-   animation: moverBarril 2s infinite linear ;  
-
+   animation: moverBarril 1s infinite linear ; 
+  
 } 
 .mario{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     height: 100px;
 
 }
